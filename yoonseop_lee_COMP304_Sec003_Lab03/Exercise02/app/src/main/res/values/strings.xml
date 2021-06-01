@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exercise02</string>
+    <string name="starting_anim_txt">Starting animation</string>
+    <string name="stopping_anim_txt">Stopping animation</string>
+    <string name="start_anim_txt">Start Animation</string>
+    <string name="stop_anim_txt">Stop Animation</string>
+</resources>

@@ -1,0 +1,2 @@
+include ':ysLee301037418Exercise01', ':ysLee301037418Exercise02', ':ysLee301037418Exercise03'
+rootProject.name='My Application'

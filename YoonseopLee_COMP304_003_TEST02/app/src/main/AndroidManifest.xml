@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yoonseoplee_comp304_003_test02">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Views.ConfirmedActivity"></activity>
+        <activity android:name=".Views.RegisterActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Views.ViewMap"
+            android:label="Map" />
+
+        <activity android:name=".Views.ProgramInfoActivity" />
+        <activity android:name=".Views.ProgramListActivity" />
+        <activity android:name=".Views.ModifyStudentActivity" />
+        <activity android:name=".Views.ViewCourseActivity" />
+
+        <activity
+            android:name=".Views.SignUpActivity"
+            android:parentActivityName=".Views.MainActivity" />
+        <activity
+            android:name=".Views.SignInActivity"
+            android:parentActivityName=".Views.MainActivity" />
+        <activity android:name=".Views.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
